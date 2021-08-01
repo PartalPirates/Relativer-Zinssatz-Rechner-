@@ -19,7 +19,7 @@ def effektiv(Zinssatz,Gebüren,Kapital,Tage,):
     print("Der Effektive Zinssatz liegt bei {:.3f} % ".format(effektiver_Zinssatz))
 
 
-print(effektiv(Zinssatz,2,80000,292))
+print(effektiv(5.75,2,80000,292))
 
 
 
