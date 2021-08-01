@@ -1,4 +1,7 @@
-def effektiv(Zinssatz,Gebüren,Kapital,Tage,):
+
+Angebote=[]
+
+def effektiv(Zinssatz,Gebühren,Kapital,Tage):
 
 
     Zinsen=Kapital*Zinssatz*Tage/(365*100)
@@ -16,10 +19,20 @@ def effektiv(Zinssatz,Gebüren,Kapital,Tage,):
 
 
     effektiver_Zinssatz=Kreditkosten*100*365/(ausgezahltes_Kaptital*Tage)
-    print("Der Effektive Zinssatz liegt bei {:.3f} % ".format(effektiver_Zinssatz))
+    Antwort="Der Effektive Zinssatz liegt bei {:.3f} % ".format(effektiver_Zinssatz)
+    List.append(Antwort)
+
+Anzahl=int(input("Anzahl der Angebote:"))
+for i in range(2):
+    Zinssatz=float(input("Gib ein Zinssatz ein:"))
+    Gebühren=int(input("Bearbeitungsgebühren:"))
+    Kapital=int(input("Mein Kapital:"))
+    Tage=int(input("Gib die Dauer an !"))
+    effektiv(Zinssatz,Gebühren,Kapital,Tage)
+
+print("Das günstigere Angebot ist ",min(List))
 
 
-print(effektiv(5.75,2,80000,292))
 
 
 
