@@ -25,12 +25,14 @@ def effektiv(Zinssatz,Gebühren,Kapital,Tage):
     
 #Hier schreibt man wie viele Angebote man vergleichen möchte
 Anzahl=int(input("Anzahl der Angebote:"))
+
 for i in range(2):
     Zinssatz=float(input("Gib ein Zinssatz ein:"))
     Gebühren=int(input("Bearbeitungsgebühren:"))
     Kapital=int(input("Mein Kapital:"))
     Tage=int(input("Gib die Dauer an !"))
     effektiv(Zinssatz,Gebühren,Kapital,Tage)
+    
 
 print("Das günstigere Angebot ist ",min(List))
 
